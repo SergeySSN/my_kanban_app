@@ -52,7 +52,7 @@ export function Details () {
 
     const value = useContext(MyContext)
     const tasks = value.tasks
-    const task = tasks.reduce((res, obj) => obj.id === currentId ? obj : res, {});
+    const task = tasks.reduce((res, obj) => obj.id == currentId ? obj : res, {});
     const onChangeDescription = value.handlerChangeDescription
 
     const index = currentId - 1;
