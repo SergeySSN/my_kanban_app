@@ -72,7 +72,7 @@ function App() {
                 <Header />
                 <Main>
                     <Routes>
-                        <Route path = '/home' element = {<HomePage />}/>
+                        <Route path = '/' element = {<HomePage />}/>
                         <Route path='/details/:id' element={<Details />}/>
                         <Route path='*' element={<NotFoundPage />}/>
                     </Routes>

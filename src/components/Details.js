@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import {IoCloseOutline} from 'react-icons/io5';
 import {Link} from 'react-router-dom'
 import {Container} from "./Container";
-import {useContext, useState} from "react";
+import {useContext} from "react";
 import MyContext from "./MyContext";
 import {useParams} from "react-router-dom";
 
@@ -52,7 +52,7 @@ export function Details () {
 
     const value = useContext(MyContext)
     const tasks = value.tasks
-    const task = tasks.reduce((res, obj) => obj.id == currentId ? obj : res, {});
+    const task = tasks.reduce((res, obj) => obj.id === currentId ? obj : res, {});
     const onChangeDescription = value.handlerChangeDescription
 
     const index = currentId - 1;
@@ -66,7 +66,7 @@ export function Details () {
                             {task.title}
                         </DetailsTitle>
                         <ReturnArea>
-                            <Link to='/home'><IoCloseOutline size = '28px' /></Link>
+                            <Link to='/'><IoCloseOutline size = '28px' /></Link>
                         </ReturnArea>
                     </DetailsTop>
                     <DetailsDescription>
