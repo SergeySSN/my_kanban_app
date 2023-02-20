@@ -8,9 +8,6 @@ import {useParams} from "react-router-dom";
 
 
 const DetailsContainer = styled.div`
- // width: 100%;
- // max-width: 1240px;
- // margin: 0 auto;
   padding: 0.5rem;
   font-family: Roboto, SansSerif;
   background-color: #0079BF;

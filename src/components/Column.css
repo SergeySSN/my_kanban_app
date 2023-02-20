@@ -6,8 +6,9 @@
     border:#EBECF0 solid;
     width: 282px;
     background-color: #EBECF0;
-    font-family: Roboto;
+    font-family: Roboto, SansSerif;
     font-size: 18px;
+    border-radius: 0.5rem;
 }
 
 .listColumn p {
